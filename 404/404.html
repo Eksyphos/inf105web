@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ERROR 404!</title>
+    <title>ERROR 404 PAGE NOT FOUND!</title>
     <link rel="stylesheet" href="404styles.css">
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
     <script src="404script.js" defer></script>
@@ -13,6 +13,7 @@
 Your browser does not support the audio element.
 </audio> -->
 <body>
+    <div class="window" on></div>
     <header>
             <ul>
                 <li><a href="../index.html">HOMEPAGE</a></li>
@@ -25,11 +26,17 @@ Your browser does not support the audio element.
         </header>
     <h1>ERROR 404</h1>
 
-    <button id="playmusic" onclick="playthemusic()">Click Me!</button>
+    <button class="musicbox" id="playmusic" onclick="playthemusic()">Click Me!</button>
 
-    <button id="stopmusic" onclick="stopthemusic()">PLEASE STOP IT!!!!</button>
-    <p>uh oh, you seem to have made a wrong turn.</p>
-    <p><a href="index.html">Returner til hovedsiden</a></p>
+    <button class="musicbox" id="stopmusic" onclick="stopthemusic()">PLEASE STOP IT!!!!</button>
+    <div class="bodytext">
+        <p class="maintext">uh oh, you seem to have made a wrong turn.</p>
+        <p class="maintext"><a href="index.html">Returner til hovedsiden</a></p>
+        <p class="maintext" id="counter">you have clicked the button 0 times</p>
+    </div class="bodytext">
+    <button id="clrblindbutton" onclick="colorblind()" >Colorblind mode</button>
+    <img id="frekkbart" src="../images/frekk_bart.png" alt="nærbilde av fjes med frekk bart">
+    <img id="melonhatt" src="../images/melonhatt.jpg" alt="artig type med en halv melon på hodet">
 </body>
 
 </html>

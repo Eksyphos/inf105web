@@ -1,8 +1,15 @@
 body {
         /* margin: 10; */
         background-color: rgb(82, 58, 27);
+        
         }
-
+header {
+  position:fixed;
+  top:0%;
+  left:0%;
+  width:100%;
+  z-index: 1;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -34,21 +41,27 @@ ul li a.active {
 }
 
 h1 {
-    font-size:500%;
-    display:block;
-    text-align: center;
+  position: relative;
+  font-size:10vw; 
+  display:block;
+  text-align: center;
+  margin: 10px;
 }
 
-button {
+.musicbox {
   background-color: red;
   border: none;
   color: white;
-  padding: 15px 32px;
+  /* padding: 15px 32px; */
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 5vw;
   cursor: pointer;
+  position: relative;
+  left:25%;
+  width:50%;
+  
 }
 button:hover {
   background-color: rgb(75, 143, 30);    
@@ -59,4 +72,41 @@ button:hover {
 }
 #stopmusic {
     display: none;
+}
+
+.window {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events:fill;
+    z-index: -1;
+}
+.maintext {
+  text-align: center;
+  font-size: 2vw;
+  margin-top: 2%;
+}
+.bodytext {
+  position: relative;
+}
+img{
+  display: flex;
+  position: fixed;
+  width: 20vw;
+  height:100%;
+  top: 1vw;
+  border: 1px solid black;
+  
+}
+#frekkbart{
+  position: fixed;
+  left: 0;
+  vertical-align:middle;
+}
+#melonhatt {
+  position: fixed;
+  right: 0;
+  vertical-align: middle;
 }

@@ -1,14 +1,9 @@
 
-function mirrortext(id){
-    const textElement = document.getElementById(id);
-    textElement.classList.toggle('mirrored');
-}
-
-
 var audio = new Audio('Langt_hår.mp3');
 var neverplayed = true
 
 function playthemusic(){
+    clicker()
     if (neverplayed){
         audio.play();
         neverplayed = false
@@ -19,8 +14,23 @@ function playthemusic(){
 }
 
 function stopthemusic(){
+    clicker()
     audio.pause();
     audio.currentTime = 0;
     document.getElementById("playmusic").style.display = "block";
     document.getElementById("stopmusic").style.display = "none";
+}
+function changecolor(){
+    document.getElementsByClassName("maintext").style.color
+    const red = Math.round(Math.random() * 255);
+    const green = Math.round(Math.random() * 255);
+    const blue = Math.round(Math.random() * 255);
+
+    document.getElementsByClassName("maintext").style.color =
+    `rgb(${red} ${green} ${blue})`;
+}
+var click = 0
+function clicker(){
+    click +=1
+    document.getElementById("counter").innerHTML = 'You have clicked the button ' + click + ' times';
 }
