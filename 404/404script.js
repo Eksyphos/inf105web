@@ -4,10 +4,10 @@ var neverplayed = true
 
 function playthemusic(){
     clicker()
-    // if (neverplayed){
-    //     audio.play();
-    //     neverplayed = false
-    // }
+    
+    audio.play();
+    
+ 
     document.getElementById("playmusic").style.display = "none";
     document.getElementById("stopmusic").style.display = "block";
     // window.alert("You just ordered");
