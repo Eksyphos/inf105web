@@ -1,13 +1,13 @@
 
-var audio = new Audio('Langt_hår.mp3');
+var audio = new Audio('../untitled.mp3');
 var neverplayed = true
 
 function playthemusic(){
     clicker()
-    if (neverplayed){
-        audio.play();
-        neverplayed = false
-    }
+    // if (neverplayed){
+    //     audio.play();
+    //     neverplayed = false
+    // }
     document.getElementById("playmusic").style.display = "none";
     document.getElementById("stopmusic").style.display = "block";
     // window.alert("You just ordered");
